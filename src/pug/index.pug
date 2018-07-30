@@ -1,0 +1,19 @@
+extends /layout/main
+block variables
+    - var title = 'Github finder'
+block content
+    .app(id='app')
+        nav.navbar.navbar-dark.bg-primary.text-white.mb-3
+            .container
+                a(href='#').navbar-brand GitHub Finder
+        main.main.mb-3
+            section.searchSection
+                .container
+                    .card.mb-3
+                        .card-body.searchContainer
+                            h1 Search for github users
+                            p Enter a username to fetch github users
+                            input(type='text' placeholder="Enter a name" id='searchUser').form-control.mb-3
+                    div(id='profile')
+        footer.bg-light.p-3.text-center
+            span GitHub Finder
